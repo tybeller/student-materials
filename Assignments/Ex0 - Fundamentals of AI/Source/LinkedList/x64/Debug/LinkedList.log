@@ -1,0 +1,103 @@
+﻿  main.cpp
+C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\Data Structures\LinkedList.h(9,12): error C2760: syntax error: ';' was unexpected here; expected '}'
+C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\Data Structures\LinkedList.h(19,3): message : see reference to class template instantiation 'ufl_cap4053::fundamentals::Node<T>' being compiled
+C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\Data Structures\LinkedList.h(23,2): error C2989: 'ufl_cap4053::fundamentals::LinkedList': class template has already been declared as a non-class template
+C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\Data Structures\LinkedList.h(18,16): message : see declaration of 'ufl_cap4053::fundamentals::LinkedList'
+C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\Data Structures\LinkedList.h(22,2): error C3856: 'fundamentals': symbol is not a class template
+C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(13,31): error C2988: unrecognizable template declaration/definition
+C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(13,31): error C2143: syntax error: missing ')' before '<'
+C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(13,31): error C2143: syntax error: missing ';' before '<'
+C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(13,31): error C2059: syntax error: '<'
+C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(13): error C2059: syntax error: ')'
+C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(21,21): error C2988: unrecognizable template declaration/definition
+C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(21,21): error C2059: syntax error: '<'
+C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(22,21): error C2988: unrecognizable template declaration/definition
+C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(22,21): error C2059: syntax error: '<'
+C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(38,5): error C2065: 'pointerList': undeclared identifier
+C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(38,5): error C2065: 'valueList': undeclared identifier
+C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(44,9): error C2065: 'valueList': undeclared identifier
+C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(45,9): error C2065: 'pointerList': undeclared identifier
+C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(47,18): error C2065: 'pointerList': undeclared identifier
+C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(47,31): error C2065: 'printCString': undeclared identifier
+C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(47,9): error C3861: 'traverse': identifier not found
+C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(56,22): error C2065: 'pointerList': undeclared identifier
+C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(57,9): error C2065: 'pointerList': undeclared identifier
+C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(59,18): error C2065: 'pointerList': undeclared identifier
+C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(59,31): error C2065: 'printCString': undeclared identifier
+C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(59,9): error C3861: 'traverse': identifier not found
+C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(62,13): error C2065: 'pointerList': undeclared identifier
+C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(65,13): error C2065: 'valueList': undeclared identifier
+C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(70,18): error C2065: 'valueList': undeclared identifier
+C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(71,5): error C2065: 'valueList': undeclared identifier
+C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(73,14): error C2065: 'valueList': undeclared identifier
+C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(73,25): error C2065: 'printString': undeclared identifier
+C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(73,5): error C3861: 'traverse': identifier not found
+C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(78,5): error C2065: 'tempStr': undeclared identifier
+C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(79,10): error C2065: 'valueList': undeclared identifier
+C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(79,29): error C2065: 'tempStr': undeclared identifier
+C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(82,18): error C2065: 'valueList': undeclared identifier
+C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(82,29): error C2065: 'printString': undeclared identifier
+C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(82,9): error C3861: 'traverse': identifier not found
+C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(90,9): error C2065: 'pointerList': undeclared identifier
+C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(93,14): error C2065: 'pointerList': undeclared identifier
+C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(93,27): error C2065: 'printCString': undeclared identifier
+C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(93,5): error C3861: 'traverse': identifier not found
+C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(96,13): error C2065: 'pointerList': undeclared identifier
+C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(99,22): error C2065: 'pointerList': undeclared identifier
+C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(100,9): error C2065: 'pointerList': undeclared identifier
+C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(102,18): error C2065: 'pointerList': undeclared identifier
+C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(102,31): error C2065: 'printCString': undeclared identifier
+C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(102,9): error C3861: 'traverse': identifier not found
+C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(110,9): error C2065: 'valueList': undeclared identifier
+C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(111,9): error C2065: 'pointerList': undeclared identifier
+C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(114,14): error C2065: 'pointerList': undeclared identifier
+C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(114,27): error C2065: 'printCString': undeclared identifier
+C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(114,5): error C3861: 'traverse': identifier not found
+C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(120,9): error C2065: 'pointerList': undeclared identifier
+C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(122,9): error C2065: 'valueList': undeclared identifier
+C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(124,9): error C2065: 'pointerList': undeclared identifier
+C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(125,9): error C2065: 'valueList': undeclared identifier
+C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(126,9): error C2065: 'valueList': undeclared identifier
+C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(128,18): error C2065: 'pointerList': undeclared identifier
+C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(128,31): error C2065: 'printCString': undeclared identifier
+C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(128,9): error C3861: 'traverse': identifier not found
+C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(133,9): error C2065: 'valueList': undeclared identifier
+C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(133,9): error C2065: 'tempStr': undeclared identifier
+C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(140,9): error C2065: 'pointerList': undeclared identifier
+C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(142,9): error C2065: 'valueList': undeclared identifier
+C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(144,9): error C2065: 'pointerList': undeclared identifier
+C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(145,9): error C2065: 'valueList': undeclared identifier
+C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(146,9): error C2065: 'valueList': undeclared identifier
+C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(148,18): error C2065: 'pointerList': undeclared identifier
+C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(148,31): error C2065: 'printCString': undeclared identifier
+C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(148,9): error C3861: 'traverse': identifier not found
+C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(153,9): error C2065: 'valueList': undeclared identifier
+C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(153,9): error C2065: 'tempStr': undeclared identifier
+C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(160,9): error C2065: 'pointerList': undeclared identifier
+C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(162,9): error C2065: 'valueList': undeclared identifier
+C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(164,9): error C2065: 'pointerList': undeclared identifier
+C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(165,9): error C2065: 'valueList': undeclared identifier
+C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(166,9): error C2065: 'valueList': undeclared identifier
+C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(168,18): error C2065: 'pointerList': undeclared identifier
+C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(168,31): error C2065: 'printCString': undeclared identifier
+C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(168,9): error C3861: 'traverse': identifier not found
+C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(173,9): error C2065: 'valueList': undeclared identifier
+C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(173,9): error C2065: 'tempStr': undeclared identifier
+C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(180,9): error C2065: 'pointerList': undeclared identifier
+C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(182,9): error C2065: 'valueList': undeclared identifier
+C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(184,9): error C2065: 'pointerList': undeclared identifier
+C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(185,9): error C2065: 'valueList': undeclared identifier
+C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(186,9): error C2065: 'valueList': undeclared identifier
+C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(188,18): error C2065: 'pointerList': undeclared identifier
+C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(188,31): error C2065: 'printCString': undeclared identifier
+C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(188,9): error C3861: 'traverse': identifier not found
+C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(193,9): error C2065: 'valueList': undeclared identifier
+C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(193,9): error C2065: 'tempStr': undeclared identifier
+C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(199,5): error C2065: 'pointerList': undeclared identifier
+C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(201,14): error C2065: 'pointerList': undeclared identifier
+C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(201,27): error C2065: 'printCString': undeclared identifier
+C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(201,5): error C3861: 'traverse': identifier not found
+C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(206,5): error C2065: 'pointerList': undeclared identifier
+C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(207,5): error C2065: 'pointerList': undeclared identifier
+C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(208,5): error C2065: 'pointerList': undeclared identifier
+C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\LinkedList\main.cpp(208,16): fatal  error C1003: error count exceeds 100; stopping compilation

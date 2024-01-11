@@ -2,33 +2,24 @@
 
 // LinkedList class should go in the "ufl_cap4053::fundamentals" namespace!
 namespace ufl_cap4053 { namespace fundamentals {
-	template <typename T>
-
+	template <class T>
 	class Node {
 	public:
-		Node(data) {
-			this->data = data;
+		Node<T>(d) {
+			data = d;
 			prev = nullptr;
 			next = nullptr;
-		}
-
-		setPrev(Node* prev) {
-			this->prev = prev
-		}
-
-		setNext(Node* next) {
-			this->next = next
-		}
+		};
 	private:
 		T data;
 		Node* prev;
 		Node* next;
 
-		friend class LinkedList<T>;
+		friend class LinkedList;
 	};
 
 
-	template <typename T>
+	template <class T>
 	class LinkedList {
 	public:
 		class Iterator {
@@ -54,6 +45,7 @@ namespace ufl_cap4053 { namespace fundamentals {
 
 			friend class LinkedList<T>;
 		};
+
 		LinkedList{
 			front = nullptr
 			back = nullptr
@@ -74,6 +66,7 @@ namespace ufl_cap4053 { namespace fundamentals {
 			return back;
 		}
 		void enqueue(T element) {
+			queuedNode = new Node<T>(element);
 			if (back) {
 				oldBack = back;
 				back->next = queuedNode;
@@ -91,21 +84,59 @@ namespace ufl_cap4053 { namespace fundamentals {
 				delete front;
 				front = newFront;
 				if (front)
-					front.prev = nullptr;
+					front->prev = nullptr;
 			}
 		}
 		void pop() {
 			if (back) {
 				newBack = back.prev;
-				deleteBac
+				delete back;
+				back = newBack;
+				if (back)
+					back->next = nullptr;
 			}
 		}
-		void clear();
-		bool contains(T element) const;
-		void remove(T element);
+		void clear() {
+			Node* curr = front;
+			while (curr != nullptr) {
+				Node* temp = curr->next;
+				delete curr;
+				curr = temp;
+			}
+			front = nullptr;
+			back = nullptr;
+		}
+		bool contains(T element) const {
+			Node* curr = front;
+			while (curr != nullptr) {
+				if (curr->data == element) {
+					return true;
+				}
+			}
+			return false;
+		}
+		void remove(T element) {
+			Node* curr = front;
+			while (curr != nullptr) {
+				if (curr->data == element) {
+					deletedPrev = curr->prev;
+					deletedNext = curr->next;
+					delete curr
+
+					if (deletedPrev) {
+						deletedPrev->next = deletedNext;
+					}
+					if (deletedNext) {
+						deletedNext->prev = deletedPrev;
+					}
+					return
+				}
+			}
+			return
+		}
 
 	private:
 		Node<T>* front;
 		Node<T>* back;
 	};
-} }  // namespace ufl_cap4053::fundamentals
+} };  // namespace ufl_cap4053::fundamentals
