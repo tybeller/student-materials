@@ -1,6 +1,2 @@
 ﻿  main.cpp
-C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\Data Structures\LinkedList.h(32,10): error C2146: syntax error: missing ':' before identifier 'Iterator'
-C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\Data Structures\LinkedList.h(126,3): message : see reference to class template instantiation 'ufl_cap4053::fundamentals::LinkedList<T>' being compiled
-C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\Data Structures\LinkedList.h(32,1): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
-C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\Data Structures\LinkedList.h(35,10): error C2146: syntax error: missing ':' before identifier 'Iterator'
-C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\Data Structures\LinkedList.h(35,1): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+  LinkedList.vcxproj -> C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\x64\Debug\LinkedList.exe

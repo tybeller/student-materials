@@ -29,38 +29,53 @@ namespace ufl_cap4053 { namespace fundamentals {
 			front = nullptr;
 			back = nullptr;
 		}
-		Iterator begin() const {
-			return Iterator(front);
-		}
-		Iterator end() const {
-			return Iterator(nullptr);
+		~LinkedList<T>() {
+			clear();
 		}
 		bool isEmpty() const {
 			return front == nullptr;
 		}
 		T getFront() const {
-			return front;
+			return front->data;
 		}
 		T getBack() const {
-			return back;
+			return back->data;
 		}
 		void enqueue(T element) {
 			Node<T>* newNode = new Node<T>(element);
-			back->next = newNode;
-			newNode->prev = back;
-			back = newNode;
+			if (isEmpty()) {
+				front = newNode;
+				back = newNode;
+			}
+			else {
+				back->next = newNode;
+				newNode->prev = back;
+				back = newNode;
+			}
 		}
 		void dequeue() {
-			Node<T>* newFront = front->next;
+			Node <T>* newFront = front->next;
 			delete front;
-			newFront->prev = nullptr;
-			front = newFront;
+			if (newFront) {
+				newFront->prev = nullptr;
+				front = newFront;
+			}
+			else {
+				front = nullptr;
+				back = nullptr;
+			}
 		}
 		void pop() {
 			Node<T>* newBack = back->prev;
 			delete back;
-			newBack->next = nullptr;
-			back = newBack;
+			if (newBack) {
+				newBack->next = nullptr;
+				back = newBack;
+			}
+			else {
+				front = nullptr;
+				back = nullptr;
+			}
 		}
 		void clear() {
 			Node<T>* curr = front;
@@ -86,17 +101,21 @@ namespace ufl_cap4053 { namespace fundamentals {
 			Node<T>* curr = front;
 			while (curr != nullptr) {
 				if (curr->data == element) {
-					Node<T>* nodePrev = curr->prev;
-					Node<T>* nodeNext = curr->next;
-
-					delete curr;
-
-					nodePrev->next = nodeNext;
-					nodeNext->prev = nodePrev;
+					if (curr == front) {
+						dequeue();
+					}
+					else if (curr == back) {
+						pop();
+					}
+					else {
+						curr->prev->next = curr->next;
+						curr->next->prev = curr->prev;
+						delete curr;
+					}
+					return;
 				}
 				curr = curr->next;
 			}
-			return;
 		}
 
 		class Iterator {
@@ -111,7 +130,7 @@ namespace ufl_cap4053 { namespace fundamentals {
 			}
 			Iterator& operator++() {
 				curr = curr->next;
-				return curr;
+				return *this;
 			}
 			bool operator==(Iterator const& rhs) {
 				return curr == rhs.curr;
@@ -120,7 +139,16 @@ namespace ufl_cap4053 { namespace fundamentals {
 				return !(curr == rhs.curr);
 			}
 
+			friend class LinkedList;
+
 		};
+
+		Iterator begin() const {
+			return Iterator(front);
+		}
+		Iterator end() const {
+			return Iterator(nullptr);
+		}
 
 		friend class Iterator;
 	};

@@ -1,0 +1,437 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C6001",
+          "message": {
+            "text": "Using uninitialized memory 'curr'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/tycbe/Documents/aiforgames/student-materials/Assignments/Ex0 - Fundamentals of AI/Source/Data Structures/LinkedList.h"
+                },
+                "region": {
+                  "startLine": 94,
+                  "startColumn": 12
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ufl_cap4053::fundamentals::LinkedList<char const *>::remove",
+                  "decoratedName": "?remove@?$LinkedList@PEBD@fundamentals@ufl_cap4053@@QEAAXPEBD@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/tycbe/Documents/aiforgames/student-materials/Assignments/Ex0 - Fundamentals of AI/Source/Data Structures/LinkedList.h"
+                          },
+                          "region": {
+                            "startLine": 83,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/tycbe/Documents/aiforgames/student-materials/Assignments/Ex0 - Fundamentals of AI/Source/Data Structures/LinkedList.h"
+                          },
+                          "region": {
+                            "startLine": 84,
+                            "startColumn": 16
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/tycbe/Documents/aiforgames/student-materials/Assignments/Ex0 - Fundamentals of AI/Source/Data Structures/LinkedList.h"
+                          },
+                          "region": {
+                            "startLine": 85,
+                            "startColumn": 20
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/tycbe/Documents/aiforgames/student-materials/Assignments/Ex0 - Fundamentals of AI/Source/Data Structures/LinkedList.h"
+                          },
+                          "region": {
+                            "startLine": 86,
+                            "startColumn": 15
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/tycbe/Documents/aiforgames/student-materials/Assignments/Ex0 - Fundamentals of AI/Source/Data Structures/LinkedList.h"
+                          },
+                          "region": {
+                            "startLine": 87,
+                            "startColumn": 15
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/tycbe/Documents/aiforgames/student-materials/Assignments/Ex0 - Fundamentals of AI/Source/Data Structures/LinkedList.h"
+                          },
+                          "region": {
+                            "startLine": 89,
+                            "startColumn": 6
+                          }
+                        },
+                        "message": {
+                          "text": "'curr' is not initialized"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/tycbe/Documents/aiforgames/student-materials/Assignments/Ex0 - Fundamentals of AI/Source/Data Structures/LinkedList.h"
+                          },
+                          "region": {
+                            "startLine": 91,
+                            "startColumn": 21
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/tycbe/Documents/aiforgames/student-materials/Assignments/Ex0 - Fundamentals of AI/Source/Data Structures/LinkedList.h"
+                          },
+                          "region": {
+                            "startLine": 92,
+                            "startColumn": 21
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/tycbe/Documents/aiforgames/student-materials/Assignments/Ex0 - Fundamentals of AI/Source/Data Structures/LinkedList.h"
+                          },
+                          "region": {
+                            "startLine": 94,
+                            "startColumn": 10
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/tycbe/Documents/aiforgames/student-materials/Assignments/Ex0 - Fundamentals of AI/Source/Data Structures/LinkedList.h"
+                          },
+                          "region": {
+                            "startLine": 94,
+                            "startColumn": 12
+                          }
+                        },
+                        "message": {
+                          "text": "'curr' is used, but may not have been initialized"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6001",
+          "message": {
+            "text": "Using uninitialized memory 'curr'."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/tycbe/Documents/aiforgames/student-materials/Assignments/Ex0 - Fundamentals of AI/Source/Data Structures/LinkedList.h"
+                },
+                "region": {
+                  "startLine": 94,
+                  "startColumn": 12
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ufl_cap4053::fundamentals::LinkedList<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >::remove",
+                  "decoratedName": "?remove@?$LinkedList@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@fundamentals@ufl_cap4053@@QEAAXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/tycbe/Documents/aiforgames/student-materials/Assignments/Ex0 - Fundamentals of AI/Source/Data Structures/LinkedList.h"
+                          },
+                          "region": {
+                            "startLine": 82,
+                            "startColumn": 17
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/tycbe/Documents/aiforgames/student-materials/Assignments/Ex0 - Fundamentals of AI/Source/Data Structures/LinkedList.h"
+                          },
+                          "region": {
+                            "startLine": 83,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/tycbe/Documents/aiforgames/student-materials/Assignments/Ex0 - Fundamentals of AI/Source/Data Structures/LinkedList.h"
+                          },
+                          "region": {
+                            "startLine": 84,
+                            "startColumn": 16
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/tycbe/Documents/aiforgames/student-materials/Assignments/Ex0 - Fundamentals of AI/Source/Data Structures/LinkedList.h"
+                          },
+                          "region": {
+                            "startLine": 85,
+                            "startColumn": 20
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/tycbe/Documents/aiforgames/student-materials/Assignments/Ex0 - Fundamentals of AI/Source/Data Structures/LinkedList.h"
+                          },
+                          "region": {
+                            "startLine": 86,
+                            "startColumn": 15
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/tycbe/Documents/aiforgames/student-materials/Assignments/Ex0 - Fundamentals of AI/Source/Data Structures/LinkedList.h"
+                          },
+                          "region": {
+                            "startLine": 87,
+                            "startColumn": 15
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/tycbe/Documents/aiforgames/student-materials/Assignments/Ex0 - Fundamentals of AI/Source/Data Structures/LinkedList.h"
+                          },
+                          "region": {
+                            "startLine": 89,
+                            "startColumn": 6
+                          }
+                        },
+                        "message": {
+                          "text": "'curr' is not initialized"
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/tycbe/Documents/aiforgames/student-materials/Assignments/Ex0 - Fundamentals of AI/Source/Data Structures/LinkedList.h"
+                          },
+                          "region": {
+                            "startLine": 91,
+                            "startColumn": 21
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/tycbe/Documents/aiforgames/student-materials/Assignments/Ex0 - Fundamentals of AI/Source/Data Structures/LinkedList.h"
+                          },
+                          "region": {
+                            "startLine": 92,
+                            "startColumn": 21
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/tycbe/Documents/aiforgames/student-materials/Assignments/Ex0 - Fundamentals of AI/Source/Data Structures/LinkedList.h"
+                          },
+                          "region": {
+                            "startLine": 94,
+                            "startColumn": 10
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/tycbe/Documents/aiforgames/student-materials/Assignments/Ex0 - Fundamentals of AI/Source/Data Structures/LinkedList.h"
+                          },
+                          "region": {
+                            "startLine": 94,
+                            "startColumn": 12
+                          }
+                        },
+                        "message": {
+                          "text": "'curr' is used, but may not have been initialized"
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.38.33134.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///C:/Users/tycbe/Documents/aiforgames/student-materials/Assignments/Ex0 - Fundamentals of AI/Source/Data Structures/LinkedList.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "b984660b58195bf1e210f97c4f202af6c81ea7601d58dd559372abb7704ed917"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/tycbe/documents/aiforgames/student-materials/assignments/ex0 - fundamentals of ai/source/linkedlist/main.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "4815d9df75d7953fd4dd7e633349db56ce30a7dae6630413bb64e17fdca988e0"
+          }
+        }
+      ]
+    }
+  ]
+}
