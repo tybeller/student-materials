@@ -4,139 +4,154 @@
 namespace ufl_cap4053 { namespace fundamentals {
 	template <class T>
 	class Node {
-	public:
-		Node<T>(d) {
-			data = d;
-			prev = nullptr;
-			next = nullptr;
-		};
 	private:
 		T data;
-		Node* prev;
-		Node* next;
-
+		Node<T>* prev;
+		Node<T>* next;
+	public:
+		Node<T>(T data) {
+			this->data = data;
+			prev = nullptr;
+			next = nullptr;
+		}
+		template <class T>
 		friend class LinkedList;
 	};
-
+	
 
 	template <class T>
 	class LinkedList {
+	private:
+		Node<T>* front;
+		Node<T>* back;
 	public:
-		class Iterator {
-		public:
-			T operator*() const {
-				return curr->data
-			}
-			Iterator& operator++() {
-				if (curr != end()) {
-					curr = curr->next;
-				}
-				return curr;
-			}
-			bool operator==(Iterator const& rhs) {
-				return rhs == curr
-			}
-			bool operator!=(Iterator const& rhs) {
-				return rhs != curr
-			}
-
-		private:
-			Node<T>* curr;
-
-			friend class LinkedList<T>;
-		};
-
-		LinkedList{
-			front = nullptr
-			back = nullptr
+		LinkedList<T>() {
+			front = nullptr;
+			back = nullptr;
 		}
-		Iterator begin() const {
-			return front;
-		}
-		Iterator end() const {
-			return iterator(nullptr);
+		~LinkedList<T>() {
+			clear();
 		}
 		bool isEmpty() const {
-			return front != nullptr;
+			return front == nullptr;
 		}
 		T getFront() const {
-			return front;
+			return front->data;
 		}
 		T getBack() const {
-			return back;
+			return back->data;
 		}
 		void enqueue(T element) {
-			queuedNode = new Node<T>(element);
-			if (back) {
-				oldBack = back;
-				back->next = queuedNode;
-				queuedNode->prev = back;
-				back = queuedNode;
+			Node<T>* newNode = new Node<T>(element);
+			if (isEmpty()) {
+				front = newNode;
+				back = newNode;
 			}
 			else {
-				front = queuedNode;
-				back = queuedNode;
+				back->next = newNode;
+				newNode->prev = back;
+				back = newNode;
 			}
 		}
 		void dequeue() {
-			if (front) {
-				newFront = front.next;
-				delete front;
+			Node <T>* newFront = front->next;
+			delete front;
+			if (newFront) {
+				newFront->prev = nullptr;
 				front = newFront;
-				if (front)
-					front->prev = nullptr;
+			}
+			else {
+				front = nullptr;
+				back = nullptr;
 			}
 		}
 		void pop() {
-			if (back) {
-				newBack = back.prev;
-				delete back;
+			Node<T>* newBack = back->prev;
+			delete back;
+			if (newBack) {
+				newBack->next = nullptr;
 				back = newBack;
-				if (back)
-					back->next = nullptr;
+			}
+			else {
+				front = nullptr;
+				back = nullptr;
 			}
 		}
 		void clear() {
-			Node* curr = front;
+			Node<T>* curr = front;
 			while (curr != nullptr) {
-				Node* temp = curr->next;
-				delete curr;
-				curr = temp;
+				Node<T>* temp = curr;
+				curr = curr->next;
+				delete temp;
 			}
 			front = nullptr;
 			back = nullptr;
 		}
 		bool contains(T element) const {
-			Node* curr = front;
+			Node<T>* curr = front;
 			while (curr != nullptr) {
 				if (curr->data == element) {
 					return true;
 				}
+				curr = curr->next;
 			}
 			return false;
 		}
 		void remove(T element) {
-			Node* curr = front;
+			Node<T>* curr = front;
 			while (curr != nullptr) {
 				if (curr->data == element) {
-					deletedPrev = curr->prev;
-					deletedNext = curr->next;
-					delete curr
-
-					if (deletedPrev) {
-						deletedPrev->next = deletedNext;
+					if (curr == front) {
+						dequeue();
 					}
-					if (deletedNext) {
-						deletedNext->prev = deletedPrev;
+					else if (curr == back) {
+						pop();
 					}
-					return
+					else {
+						curr->prev->next = curr->next;
+						curr->next->prev = curr->prev;
+						delete curr;
+					}
+					return;
 				}
+				curr = curr->next;
 			}
-			return
 		}
 
-	private:
-		Node<T>* front;
-		Node<T>* back;
+		class Iterator {
+		private:
+			Node<T>* curr;
+
+		public:
+			Iterator(Node<T>* node) : curr(node) {}
+
+			T operator*() const {
+				return curr->data;
+			}
+			Iterator& operator++() {
+				curr = curr->next;
+				return *this;
+			}
+			bool operator==(Iterator const& rhs) {
+				return curr == rhs.curr;
+			}
+			bool operator!=(Iterator const& rhs) {
+				return !(curr == rhs.curr);
+			}
+
+			friend class LinkedList;
+
+		};
+
+		Iterator begin() const {
+			return Iterator(front);
+		}
+		Iterator end() const {
+			return Iterator(nullptr);
+		}
+
+		friend class Iterator;
 	};
-} };  // namespace ufl_cap4053::fundamentals
+
+	
+}}  // namespace ufl_cap4053::fundamentals

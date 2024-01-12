@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\Data Structures\</FILEPATH>
+      <FILENAME>LinkedList.h</FILENAME>
+      <LINE>94</LINE>
+      <COLUMN>11</COLUMN>
+    </SFA>
+    <DEFECTCODE>6001</DEFECTCODE>
+    <DESCRIPTION>Using uninitialized memory 'curr'.</DESCRIPTION>
+    <FUNCTION>ufl_cap4053::fundamentals::LinkedList&lt;char const *&gt;::remove</FUNCTION>
+    <DECORATED>?remove@?$LinkedList@PEBD@fundamentals@ufl_cap4053@@QEAAXPEBD@Z</DECORATED>
+    <FUNCLINE>82</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>3</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\Data Structures\</FILEPATH>
+        <FILENAME>LinkedList.h</FILENAME>
+        <LINE>83</LINE>
+        <COLUMN>12</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\Data Structures\</FILEPATH>
+        <FILENAME>LinkedList.h</FILENAME>
+        <LINE>84</LINE>
+        <COLUMN>15</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\Data Structures\</FILEPATH>
+        <FILENAME>LinkedList.h</FILENAME>
+        <LINE>85</LINE>
+        <COLUMN>19</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\Data Structures\</FILEPATH>
+        <FILENAME>LinkedList.h</FILENAME>
+        <LINE>86</LINE>
+        <COLUMN>14</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\Data Structures\</FILEPATH>
+        <FILENAME>LinkedList.h</FILENAME>
+        <LINE>87</LINE>
+        <COLUMN>14</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\Data Structures\</FILEPATH>
+        <FILENAME>LinkedList.h</FILENAME>
+        <LINE>89</LINE>
+        <COLUMN>5</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>declaration</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>'curr' is not initialized</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\Data Structures\</FILEPATH>
+        <FILENAME>LinkedList.h</FILENAME>
+        <LINE>91</LINE>
+        <COLUMN>20</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\Data Structures\</FILEPATH>
+        <FILENAME>LinkedList.h</FILENAME>
+        <LINE>92</LINE>
+        <COLUMN>20</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\Data Structures\</FILEPATH>
+        <FILENAME>LinkedList.h</FILENAME>
+        <LINE>94</LINE>
+        <COLUMN>9</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\Data Structures\</FILEPATH>
+        <FILENAME>LinkedList.h</FILENAME>
+        <LINE>94</LINE>
+        <COLUMN>11</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>usage</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>'curr' is used, but may not have been initialized</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\Data Structures\</FILEPATH>
+      <FILENAME>LinkedList.h</FILENAME>
+      <LINE>94</LINE>
+      <COLUMN>11</COLUMN>
+    </SFA>
+    <DEFECTCODE>6001</DEFECTCODE>
+    <DESCRIPTION>Using uninitialized memory 'curr'.</DESCRIPTION>
+    <FUNCTION>ufl_cap4053::fundamentals::LinkedList&lt;std::basic_string&lt;char,std::char_traits&lt;char&gt;,std::allocator&lt;char&gt; &gt; &gt;::remove</FUNCTION>
+    <DECORATED>?remove@?$LinkedList@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@fundamentals@ufl_cap4053@@QEAAXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z</DECORATED>
+    <FUNCLINE>82</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>3</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\Data Structures\</FILEPATH>
+        <FILENAME>LinkedList.h</FILENAME>
+        <LINE>82</LINE>
+        <COLUMN>16</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\Data Structures\</FILEPATH>
+        <FILENAME>LinkedList.h</FILENAME>
+        <LINE>83</LINE>
+        <COLUMN>12</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\Data Structures\</FILEPATH>
+        <FILENAME>LinkedList.h</FILENAME>
+        <LINE>84</LINE>
+        <COLUMN>15</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\Data Structures\</FILEPATH>
+        <FILENAME>LinkedList.h</FILENAME>
+        <LINE>85</LINE>
+        <COLUMN>19</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\Data Structures\</FILEPATH>
+        <FILENAME>LinkedList.h</FILENAME>
+        <LINE>86</LINE>
+        <COLUMN>14</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\Data Structures\</FILEPATH>
+        <FILENAME>LinkedList.h</FILENAME>
+        <LINE>87</LINE>
+        <COLUMN>14</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\Data Structures\</FILEPATH>
+        <FILENAME>LinkedList.h</FILENAME>
+        <LINE>89</LINE>
+        <COLUMN>5</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>declaration</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>'curr' is not initialized</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\Data Structures\</FILEPATH>
+        <FILENAME>LinkedList.h</FILENAME>
+        <LINE>91</LINE>
+        <COLUMN>20</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\Data Structures\</FILEPATH>
+        <FILENAME>LinkedList.h</FILENAME>
+        <LINE>92</LINE>
+        <COLUMN>20</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\Data Structures\</FILEPATH>
+        <FILENAME>LinkedList.h</FILENAME>
+        <LINE>94</LINE>
+        <COLUMN>9</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\tycbe\Documents\aiforgames\student-materials\Assignments\Ex0 - Fundamentals of AI\Source\Data Structures\</FILEPATH>
+        <FILENAME>LinkedList.h</FILENAME>
+        <LINE>94</LINE>
+        <COLUMN>11</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>usage</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>'curr' is used, but may not have been initialized</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT>
+</DEFECTS>
